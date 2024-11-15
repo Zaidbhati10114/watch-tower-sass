@@ -8,11 +8,13 @@ import { projectRouter } from "./routers/project-router"
 
 const app = new Hono().basePath("/api").use(cors())
 
-/**
- * This is the primary router for your server.
- *
- * All routers added in /server/routers should be manually added here.
- */
+// Example of minimal CORS setup
+app.use((c, next) => {
+  c.header("Access-Control-Allow-Origin", "*")
+  c.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE")
+  return next()
+})
+
 const appRouter = app
   .route("/auth", authRouter)
   .route("/category", categoryRouter)
@@ -22,12 +24,6 @@ const appRouter = app
 // The handler Next.js uses to answer API requests
 export const httpHandler = handle(app)
 
-/**
- * (Optional)
- * Exporting our API here for easy deployment
- *
- * Run `npm run deploy` for one-click API deployment to Cloudflare's edge network
- */
 export default app
 
 // export type definition of API
