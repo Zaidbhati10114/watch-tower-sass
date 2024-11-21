@@ -1,7 +1,2 @@
-STAR THE REPO IF YOURE COOL
-
-jStack - an opinionated stack to ship high-performance, low-cost Next.js apps inspired by the T3 stack.
-
-This is an early-stage stack so probably dont use in production yet. If you're wild enough to do so despite this warning, let me know your website URL so I can feature you lol
-
-documentation coming soon, for now just clone this repo, fill out the .env.example :))
+Watch Tower: A SaaS notification service that streamlines your business alerts by sending real-time Discord push notifications for sales, bugs, and new client sign-ups. Stay informed and act fast with Watch Tower!
+![Screenshot 2024-11-21 at 3 24 11 PM](https://github.com/user-attachments/assets/0fd2fd6e-9e6d-48dd-8740-2eb9aa48b7ac)
